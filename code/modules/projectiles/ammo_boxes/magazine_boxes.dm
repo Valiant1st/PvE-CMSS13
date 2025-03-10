@@ -170,6 +170,16 @@
 /obj/item/ammo_box/magazine/m4ra/heap/empty
 	empty = TRUE
 
+
+/obj/item/ammo_box/magazine/m4ra/du
+	name = "magazine box (DU M4RA x 16)"
+	overlay_ammo_type = "_du"
+	overlay_content = "_du"
+	magazine_type = /obj/item/ammo_magazine/rifle/m4ra/fu
+
+/obj/item/ammo_box/magazine/m4ra/heap/empty
+	empty = TRUE
+
 //-----------------------XM51 Breaching Scattergun Mag Box-----------------------
 
 /obj/item/ammo_box/magazine/xm51
