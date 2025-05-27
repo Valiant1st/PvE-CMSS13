@@ -470,7 +470,8 @@ GLOBAL_LIST_INIT(slot_to_contained_sprite_shorthand, list(
 #define ACCESSORY_SLOT_DECORARMOR "Decor Armor"
 #define ACCESSORY_SLOT_DECORBRACER "Decor Bracer"
 #define ACCESSORY_SLOT_DECORNECK "Decor Neck"
-#define ACCESSORY_SLOT_LEGDECOR "Leg Decor"
+#define ACCESSORY_SLOT_DECORSHIN "Decor Shin"
+#define ACCESSORY_SLOT_DECORKNEE "Decor Knee"
 #define ACCESSORY_SLOT_DECORGROIN "Decor Groin"
 #define ACCESSORY_SLOT_MEDAL "Medal"
 #define ACCESSORY_SLOT_PONCHO "Ponchos"
@@ -479,6 +480,8 @@ GLOBAL_LIST_INIT(slot_to_contained_sprite_shorthand, list(
 #define ACCESSORY_SLOT_PAINT "Paint"
 #define ACCESSORY_SLOT_M3UTILITY "M3 Utility"
 #define ACCESSORY_SLOT_M56UTILITY "M56 Utility"
+#define ACCESSORY_SLOT_WRIST_L "Left wrist"
+#define ACCESSORY_SLOT_WRIST_R "Right wrist"
 
 /// Used for uniform armor inserts.
 #define ACCESSORY_SLOT_ARMOR_C "Chest armor"
@@ -578,3 +581,15 @@ GLOBAL_LIST_INIT(uniform_categories, list(
 #define PHONE_ON_BASE_UNIT_ICON_STATE "[initial(icon_state)]"
 #define PHONE_OFF_BASE_UNIT_ICON_STATE "[initial(icon_state)]_ear"
 #define PHONE_RINGING_ICON_STATE "[initial(icon_state)]_ring"
+
+// Human AI flags
+/// This item is classified as a healing item for the sake of human AI
+#define HEALING_ITEM (1<<0)
+/// This item is classified as ammunition for the sake of human AI
+#define AMMUNITION_ITEM (1<<1)
+/// This item is classified as a grenade for the sake of human AI
+#define GRENADE_ITEM (1<<2)
+/// This item is classified as a tool for the sake of human AI
+#define TOOL_ITEM (1<<3)
+/// This item is classified as a melee weapon for the sake of human AI
+#define MELEE_WEAPON_ITEM (1<<4)
